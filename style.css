@@ -1,0 +1,538 @@
+*{
+    box-sizing: border-box;
+}
+body, ul, li{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+nav, .phone-block-wrap, header, .actions-wrap, .find-out, .result-example, 
+.get-help-wrap, .bottom, .lawyers, .lawyer-photo-wrap, #timer{
+    display: flex;
+}
+nav{
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background: #F9F9F9;
+    border-bottom: 1px solid #DDDEDD;
+}
+nav .phone-block-wrap {
+    align-items: center;
+    gap: 11px;
+}
+.phone-number, .fast-consult{
+    margin: 0;
+}
+.phone-block-wrap .phone-number{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #62BF40;
+}
+.phone-block-wrap .fast-consult{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #737E72;
+}
+header{
+    height: 643px;
+    align-items: center;
+    justify-content: center;
+    background: #F9F9F9;
+}
+.btn{
+    background: linear-gradient(180deg, #66BC01 0%, #2F9C07 100%);
+    box-shadow: 0px 10px 25px rgba(54, 152, 6, 0.3);
+    border-radius: 5px;
+    border: 0;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.form-fill-btn{
+    margin-left: 39px;
+    padding: 15px 20px;
+}
+.get-conclusion-btn{
+    padding: 20px 25px;
+}
+.sale-info{
+    display: grid;
+    max-width: 665px;
+    gap: 30px;
+}
+mark{
+    background-color: #62BF40;
+    padding: 5px 5px 10px 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.sale-info .medium-text{
+    margin: 0 0 52px;
+}
+.sale-info .big-text{
+    margin:0;
+    max-width: 570px;
+}
+.big-text{
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 51px;
+    color: #424249;
+}
+.medium-text{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 30px;
+    color: #737E72;
+}
+.time-spent{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #898989;
+}
+.actions-wrap{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.get-conclusion-wrap, main{
+    display: grid;
+}
+.get-conclusion-wrap{
+    justify-items: center;
+}
+.result-example{
+    height: fit-content;
+    align-items: center;
+    position: relative;
+}
+.result-example img{
+    position: absolute;
+    right: 165px;
+    top: -30px;
+}
+.result-example a{
+    padding: 20px 27px 20px 82px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    background: #EEF6E8;
+    border-radius: 5px;
+    color: #2A8C06;
+}
+.conclusion-example{
+    max-width: 524px;
+    height: 552px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.conclusion-example img:first-child{
+    z-index: 5;
+}
+.conclusion-example img:last-child{
+    position: absolute;
+    z-index: 2;
+}
+main{
+    margin: 100px 0 0;
+}
+.find-out{
+    justify-content: space-around;
+}
+.info-wrap{
+    max-width: 517px;
+}
+.number{
+    margin: 0;
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2A8C06;
+    background: #EEF6E8;
+    border-radius: 20px;
+    max-width: 48px;
+    text-align: center;
+}
+.block-header{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: #424249;
+    margin: 10px 0 30px;
+}
+main ul{
+    list-style: none;
+    color: #737E72;
+}
+main ul li{
+    font-weight: 400;
+    padding: 0 0 0 15px;
+    font-size: 15px;
+    line-height: 22px;
+}
+.info-wrap .list-wrap:nth-child(-n+2){
+    max-width: 400px;
+}
+main ul span{
+    color: #2A8C06;
+}
+.list-wrap{
+    display: flex;
+    margin: 0 0 15px;
+}
+.get-help-wrap{
+    margin: 100px 0 0;
+    justify-content: center;
+    gap: 25px;
+}
+.get-help{
+    padding: 50px;
+    max-width: 570px;
+    max-height: 398px;
+    background: #F9F9F9;
+    border-radius: 20px;
+}
+.lawyers-wrap{
+    display: grid;
+    justify-items: center;
+    max-width: 700px;
+    overflow: hidden;
+    gap: 40px;
+}
+.lawyers{
+    justify-content: space-between;
+    
+}
+.lawyer{
+    height: 298px;
+    max-width: 190px;
+    margin: 0 5px;
+    transition: all 1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+.lawyer-photo-wrap{
+    position: relative;
+    width: 190px;
+    height: 59px;
+    justify-content: center;
+}
+.lawyer-photo-wrap img{  
+    position: absolute;
+}
+.lawyer-info{
+    background: #F6F9F6;
+    border-radius: 20px;
+    padding: 69px 20px 20px;
+}
+.lawyer-info p{
+    margin: 0;
+}
+.lawyer-info p:nth-child(-n+2){
+    margin: 0 0 5px;
+}
+.lawyer-name{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000;
+}
+.status, .experience, .additional-info{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+.status{
+    color: #62BF40;
+}
+.offline{
+    color: #CFD8D1;
+}
+.experience, .additional-info{
+    color: #737E72;
+}
+.arrow-wrap{
+
+}
+.arrow-wrap img{
+    -webkit-user-drag: none;
+}
+.left-arrow, .right-arrow{
+    cursor: pointer;
+    background: 0;
+    border: 0;
+}
+.bottom-wrap{
+    margin: 100px 0 90px;
+}
+.bottom-wrap span{
+    color: #2A8C06;
+}
+.bottom{
+    max-width: 1170px;
+    min-width: 328px;
+    padding: 60px 50px 60px 60px;
+    margin: 0 auto;
+    background: #F9F9F9;
+    border-radius: 30px;
+}
+.bottom .big-text{
+    max-width: 500px;
+    margin: 0;
+}
+.timer-wrap{
+    display: grid;
+    align-content: space-between;
+    margin: 0 24px 0 0;
+    width: -webkit-fill-available;
+}
+#timer{
+    background: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+    max-width: 366px;
+    height: 198px;
+}
+.hours-wrap p:first-child, .seconds-wrap p:first-child, .colon{
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 120px;
+    margin: 0;
+    background: linear-gradient(180deg, #66BC01 0%, #2F9C07 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.colon{
+    padding: 0 10px;
+    height: 165px;
+}
+.hours-wrap p:last-child, .seconds-wrap p:last-child{
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #62BF40;
+}
+.seconds-wrap{
+    width: 120px;
+}
+.hours-wrap{
+    width: 110px;
+}
+.price-after{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: #424249;
+    margin: 0;
+}
+.hourglass-wrap{
+    display: flex;
+    align-items: center;
+    max-width: 381px;
+}
+.hourglass-wrap img{
+    margin: 0 0 13px;
+
+}
+.mobile-img, .mobile-text{
+    display: none;
+}
+.mobile-text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #424249;
+    margin: 0 0 30px;
+}
+.mobile-img{
+    margin: 0 0 30px;
+}
+.hourglass-mobile-wrap{
+    display: none;
+}
+@media screen and (max-width:1235px) {
+    header{
+        padding: 0 0 0 10px;
+    }
+    .actions-wrap{
+        justify-content: center;
+    }
+    .lawyers-wrap{
+        justify-items: start;
+    }
+    .bottom-wrap{
+        margin: 100px 16px 90px;
+    }
+}
+@media screen and (max-width:1010px) {
+    .big-text{
+        font-size: 28px;
+    }
+    .medium-text{
+        font-size: 16px;
+    }
+    .find-out .desktop-img{
+        display: none;
+    }
+    .mobile-img, .mobile-text{
+        display: block;
+    }
+    .find-out, .get-help-wrap, .info-wrap{
+        display: grid;
+    }
+    .bottom{
+        padding: 30px 15px 50px;
+    }
+}
+@media screen and (max-width:910px) {
+    header{
+        padding: 15px 0;
+        height: max-content;
+        display: grid;
+        justify-items: center;
+    }
+    .actions-wrap{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .get-help{
+        padding: 20px;
+    }
+    main{
+        margin: 100px 16px 0;
+    }
+    .bottom{
+        display: grid;
+    }
+    .hourglass-wrap{
+        display: none;
+    }
+    .mobile-price-after{
+        display: flex;
+        align-items: center;
+        margin: 0 0 35px;
+    }
+    .hourglass-mobile-wrap img{
+        width: 150px;
+        transform: rotateY(180deg);
+        position: absolute;
+        right: 0;
+    }
+    .hourglass-mobile-wrap{
+        display: block;
+        position: relative;
+        width: 150px;
+        height: 180px;
+    }
+    .price-after{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .hours-wrap p:first-child, .seconds-wrap p:first-child, .colon{
+        font-size: 81px;
+        line-height: 97px;
+    }
+    .colon{
+        height: 150px;
+    }
+    .bottom .big-text{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        width: 270px;
+        margin: 0 0 25px;
+    }
+}
+@media screen and (max-width:641px) {
+    .actions-wrap{
+        justify-content: center;
+    }
+    .result-example a{
+        padding: 22px 0 21px;
+        width: 298px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .result-example img{
+        right: 215px;
+    }
+    header{
+        padding: 45px 16px 60px;
+    }
+    .btn{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .get-conclusion-btn{
+        padding: 20px 25px;
+        white-space: nowrap;
+    }
+    .conclusion-example{
+        display: none;
+    }
+    .timer-wrap{
+        justify-items: center;
+    }
+}
+@media screen and (max-width:590px) {
+    .form-fill-btn, .phone-block-wrap object{
+        display: none;
+    }
+    nav{
+        height: 60px;
+    }
+    nav .phone-block-wrap{
+        margin: 0 10px 0 0;
+    }
+    .big-text{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .medium-text{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .sale-info{
+        gap: 40px;
+    }
+    .sale-info .medium-text{
+        margin: 0;
+    }
+    mark{
+        padding: 2px 6px 5px;
+        border-radius: 10px;
+    }
+    .block-header{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 10px 0 15px;
+    }
+    .list-wrap li{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    #timer{
+        width: 298px;
+    }
+}
+
